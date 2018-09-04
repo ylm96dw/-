@@ -1,0 +1,23 @@
+<!--pages/book/book.wxml-->
+<!--引入towxml模板入口文件，并使用模板-->
+<import src="/towxml/entry.wxml"/>
+
+<view class='book'>
+  <view>
+    <template is="entry" data="{{...article}}"/>
+  </view> 
+
+  <!-- <scroll-view >
+    <view>
+      {{item.title}}
+    </view>
+  </scroll-view> -->
+  <view class='menu'>
+    <view class='iconfont icon-prev'></view>
+    <view class='iconfont icon-mulu'></view>
+    <view class='iconfont icon-zitifangda'></view>
+    <view class='iconfont icon-font-up'></view>
+    <view class='iconfont icon-next'></view>
+  </view>
+</view>
+
